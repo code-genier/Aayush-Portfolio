@@ -1,0 +1,133 @@
+
+html{
+    margin: 0;
+    padding: 0;
+    cursor: none;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    perspective: 5000px;
+    background: #101820FF;
+    cursor: none;
+    overflow-x: hidden;
+}
+.mouse-circle{
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: -32px 0 0 -32px;
+    border: 2px solid #FEE715FF;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: 0.1s ease;
+}
+.mouse-circle2{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border:  2px solid #FEE715FF;
+    background:#FEE715FF;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: 0.1s ease;
+}
+.bg_txt{
+    position:fixed;
+    font-size: 30em;
+    font-weight: lighter;
+    top: 40vh;
+    left: 220%;
+    animation-name: bgtxt;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    transition: ease;
+    color: #FEE715FF;
+    animation-timing-function: linear;
+}
+.bg_txt2{
+    position:fixed;
+    font-size: 35em;
+    top: 190vh;
+    left: -25%;
+    transform: rotateZ(45deg);
+    font-weight: lighter;
+    transition: ease;
+    color: #FEE715FF;
+    animation-timing-function: linear;
+    animation-name: bgtxt2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    transition: all 1s ease;
+}
+.bg_txt3{
+    position:fixed;
+    font-size: 30em;
+    color: #FEE715FF;
+    top: 330vh;
+    left: 100%;
+    transform: rotateZ(-20deg);
+    animation-timing-function: linear;
+    animation-name: bgtxt3;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    transition: all 1s ease;
+    z-index: -1;
+}
+
+@keyframes bgtxt {
+    0%{
+        left:210%;
+    }
+    
+    25%{
+        left:-210%
+    }
+    50%{
+        left: 210%;
+    }
+    75%{
+        left: -210%;
+    }
+}
+@keyframes bgtxt2 {
+    0%{
+        transform: rotateZ(45deg);
+    }
+    20%{
+        transform: rotateZ(38deg);
+    }
+    40%{
+        transform: rotateZ(45deg);
+    }
+    60%{
+        transform: rotateZ(52deg);
+    }
+    80%{
+        transform: rotateZ(45deg);
+    }
+}
+@keyframes bgtxt3 {
+    0%{
+        transform: rotateZ(-20deg);
+    }
+    20%{
+        transform: rotateZ(-30deg);
+    }
+    40%{
+        transform: rotateZ(-20deg);
+    }
+    60%{
+        transform: rotateZ(-10deg);
+    }
+    80%{
+        transform: rotateZ(-20deg);
+    }
+}
+
+

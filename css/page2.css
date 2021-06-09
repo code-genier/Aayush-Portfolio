@@ -1,0 +1,38 @@
+
+.page2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30%;
+    color:rgb(254, 231, 21);
+}
+.about{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2em 4em;
+    align-items: center;
+}
+.bg2{
+    width: 90%;
+}
+.about_left{
+    padding: 2em 4em 3em 6em;
+}
+.about_right{
+    font-weight: lighter;
+    font-family: "Poppins", sans-serif;
+    padding: 2em 6em 3em 2em;
+}
+@media only screen and (max-width: 441px){
+    .about{
+        padding:2em 2em;
+        font-size: 0.7em;
+        flex-direction: column;
+    }
+    .bg2{
+        padding: 4em 0em 1em 0em;
+    }
+}
